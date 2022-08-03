@@ -39,6 +39,7 @@ page 50114 "Test DataType Card"
                 ApplicationArea = All;
                 trigger OnAction()
                 begin
+                    Message('The value of %1 is %2', 'LoopNo', LoopNo);
                     Message('The value of %1 is %2', 'Description', Description);
                     Message('The value of %1 is %2', 'Code Number', "Code Number");
                     Message('The value of %1 is %2', 'Ch', Ch);
@@ -49,8 +50,9 @@ page 50114 "Test DataType Card"
     }
 
     var
-        LoopNo: Integer;
-        YesOrNo: Boolean;  //False
+        //Default values for AL Data Types
+        LoopNo: Integer;    //0
+        YesOrNo: Boolean;  //No
         Amount: Decimal; //0
         "When Was It": Date; //empty string
         "What Time": Time; //empty string
