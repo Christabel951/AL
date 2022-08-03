@@ -17,10 +17,15 @@ page 50112 "Statements Card"
                     ApplicationArea = All;
                     Caption = 'Degree of Dificulty';
 
-                    trigger OnValidate()
-                    begin
-                        GetSuggestion();
-                    end;
+                    // trigger OnValidate()
+                    // begin
+                    //     GetSuggestion();
+                    // end;
+                }
+                field(ColorSprectrum; ColorSprectrum)
+                {
+                    Caption = 'Choose Color range [1 - 7]';
+                    ApplicationArea = All;
                 }
             }
             group(Output)
@@ -38,6 +43,12 @@ page 50112 "Statements Card"
                     Caption = 'Level';
                     Editable = false;
                 }
+                field(Color; Color)
+                {
+                    Caption = 'Your Color: ';
+                    ApplicationArea = All;
+                    Editable = false;
+                }
             }
         }
     }
@@ -46,12 +57,15 @@ page 50112 "Statements Card"
     {
         area(Processing)
         {
-            action(ActionName)
+            action(AlternativeRun)
             {
+                Caption = 'Process All';
                 ApplicationArea = All;
 
                 trigger OnAction()
                 begin
+                    GetSuggestion();
+                    GetColor();
 
                 end;
             }
@@ -62,6 +76,8 @@ page 50112 "Statements Card"
         Level: Text[30];
         Suggestion: Text[80];
         Difficulty: Integer;
+        ColorSprectrum: Integer;
+        Color: Text[50];
 
     procedure GetSuggestion()
     begin
@@ -84,6 +100,48 @@ page 50112 "Statements Card"
                     Level := 'Advanced';
                     Suggestion := 'Attend instructor -Led and self study';
                 end;
+            else begin
+                    Message('Value Invalid, Please choose Difficulty Levels 1 - 10: ');
+                end;
+        end;
+    end;
+
+    procedure GetColor()
+    begin
+        Color := '';
+        case ColorSprectrum of
+            1:
+                begin
+                    Color := 'Red';
+                end;
+            2:
+                begin
+                    Color := 'Orange';
+                end;
+            3:
+                begin
+                    Color := 'Yellow';
+                end;
+            4:
+                begin
+                    Color := 'Green';
+                end;
+            5:
+                begin
+                    Color := 'Blue';
+                end;
+            6:
+                begin
+                    Color := 'Indigo';
+                end;
+            7:
+                begin
+                    Color := 'Violet';
+                end;
+            else begin
+                    Message('Invalid Range , Please enter Color Range of 1 - 7 :  ');
+                end;
+
         end;
     end;
 }
