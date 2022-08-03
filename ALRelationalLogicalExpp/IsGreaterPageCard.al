@@ -34,6 +34,12 @@ page 50111 "Expressions Card"
                     Editable = false;
                     Caption = 'The Result = ';
                 }
+                field(Result1; Result1)
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                    Caption = 'SumCode = ';
+                }
             }
         }
     }
@@ -46,11 +52,12 @@ page 50111 "Expressions Card"
             {
                 ApplicationArea = All;
                 Caption = 'Execute';
-                Image = ExecuteBatch;
+                //Image = ExecuteBatch;
 
                 trigger OnAction()
                 begin
                     Result := valueA > valueB;
+                    Result1 := 'SURVEY';
                 end;
             }
         }
@@ -60,4 +67,5 @@ page 50111 "Expressions Card"
         valueA: Integer;
         valueB: Integer;
         Result: Boolean;
+        Result1: Code[6];
 }
