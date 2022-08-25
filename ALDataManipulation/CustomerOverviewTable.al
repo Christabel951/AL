@@ -1,7 +1,7 @@
 table 50119 "Customer Overview"
 {
     //DataClassification: specifies the classification to be applied on the data contained in the table
-    //CustomerContent: Content directly provided or cretaed by admins and users. Also the default value of property
+    //CustomerContent: Content directly provided or created by admins and users. Also the default value of property
 
     DataClassification = CustomerContent;
     Caption = 'Customer Overview';
@@ -45,6 +45,10 @@ table 50119 "Customer Overview"
     {
         key(Key1; "Entry No.")
         {
+            //Clustered = true: Attribute cannot be used in table ext
+            //Determines the physical order in which records are sored in the table
+            //There can only be one clustered key (Key used to order/organize records in a table) which does not have to necessarily be the PK
+            //Improves retrieval speed of records
             Clustered = true;
         }
     }
