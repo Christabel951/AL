@@ -1,0 +1,25 @@
+{
+  "id": "769ef233-9bac-498a-881d-c5b7f131d1db",
+  "name": "PET",
+  "publisher": "Default publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 999999
+    }
+  ],
+  "showMyCode": true,
+  "runtime": "6.0"
+}
