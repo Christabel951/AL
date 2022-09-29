@@ -1,4 +1,4 @@
-page 50305 "Visit Log"
+page 50321 "Bill Visit Card"
 {
     Caption = 'Visit Log';
     PageType = Card;
@@ -10,6 +10,8 @@ page 50305 "Visit Log"
         {
             group(General)
             {
+                Editable = false;
+
                 field(Code; Rec."Visit Log ID")
                 {
                     Caption = 'Visit Log Code';
@@ -73,6 +75,7 @@ page 50305 "Visit Log"
             }
             part("Visit Log Lines"; "Visit Log Lines")
             {
+                Editable = false;
                 ApplicationArea = All;
                 SubPageLink = "Document No." = field("Visit Log ID");
             }
@@ -109,7 +112,7 @@ page 50305 "Visit Log"
             }
             group(Reports)
             {
-                action("Visit Bill Report")
+                action("Purchase Requisition")
                 {
                     ApplicationArea = All;
                     Image = Print;
@@ -136,6 +139,7 @@ page 50305 "Visit Log"
 
     }
 }
+
 
 
 

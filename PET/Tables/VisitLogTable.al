@@ -22,7 +22,7 @@ table 50103 "Visit Log"
                 if PetRec.Get("Pet Code") then begin
                     "Pet Name" := PetRec.PetName;
                     PetType := PetRec.PetType;
-                    "Pet Owner No." := PetRec.Owner;
+                    "Pet Owner No." := PetRec.OwnerNo;
 
                 end;
                 if CustRec.Get("Pet Owner No.") then begin
@@ -92,14 +92,8 @@ table 50103 "Visit Log"
             Clustered = true;
         }
     }
-
-    var
-        myInt: Integer;
-
     trigger OnInsert()
-
     var
-
         NoSeriesMgt: Codeunit NoSeriesManagement;
         Setup: Record Setup;
     begin

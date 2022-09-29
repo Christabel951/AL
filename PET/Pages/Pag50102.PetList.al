@@ -39,7 +39,7 @@ page 50302 PetList
                     ApplicationArea = All;
                     Caption = 'Pet Birth Date';
                 }
-                field(Owner; Rec.Owner)
+                field(Owner; Rec.OwnerNo)
                 {
                     Caption = 'Pet Owner';
                     ApplicationArea = All;
@@ -48,10 +48,12 @@ page 50302 PetList
 
                 field(Height; Rec.Height)
                 {
+                    Caption = 'Height(Inch)';
                     ApplicationArea = All;
                 }
                 field(Weight; Rec.Weight)
                 {
+                    Caption = 'Weight(Kg)';
                     ApplicationArea = All;
                 }
                 field(Age; Rec.Age)
@@ -69,11 +71,6 @@ page 50302 PetList
                     ApplicationArea = All;
                     ToolTip = 'Specifies the time the record was created.';
                 }
-                // field(CreatedBy; Rec.SystemCreatedBy)
-                // {
-                //     ApplicationArea = All;
-                //     ToolTip = 'Specifies the user who created the record.';
-                // }
             }
         }
     }

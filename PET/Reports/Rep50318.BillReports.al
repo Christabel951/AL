@@ -27,6 +27,9 @@ report 50318 "Bill Reports"
             column(Owner_VisitLog; "Pet Owner No.")
             {
             }
+            column(PetOwnerName_VisitLog; "Pet Owner Name")
+            {
+            }
             dataitem("Visit lines"; "Visit lines")
             {
                 DataItemLink = "Document No." = field("Visit Log ID");

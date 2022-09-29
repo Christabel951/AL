@@ -1,5 +1,6 @@
 page 50317 "Bill Visits"
 {
+    CardPageId = "Bill Visit Card";
     Caption = 'Bill Visits';
     PageType = List;
     SourceTable = "Visit Log";

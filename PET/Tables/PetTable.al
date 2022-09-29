@@ -7,6 +7,7 @@ table 50100 Pet
         field(1; PetNo; Code[20])
         {
             DataClassification = ToBeClassified;
+            Editable = false;
 
         }
         field(2; PetName; Text[50])
@@ -25,15 +26,30 @@ table 50100 Pet
         field(5; Color; Text[50])
         {
             DataClassification = ToBeClassified;
+            TableRelation = Color;
         }
         field(6; Age; Integer)
         {
             DataClassification = ToBeClassified;
+            Editable = false;
         }
-        field(7; Owner; Code[20])
+        field(7; OwnerNo; Code[20])
         {
             DataClassification = ToBeClassified;
             TableRelation = Customer;
+            trigger OnValidate()
+            var
+                CustRec: Record Customer;
+            begin
+                if CustRec.Get(OwnerNo) then begin
+                    Owner := CustRec.Name;
+                end;
+
+            end;
+        }
+        field(12; Owner; Text[50])
+        {
+            DataClassification = ToBeClassified;
         }
         field(8; "No. Series"; Code[20])
 
@@ -54,6 +70,12 @@ table 50100 Pet
         field(11; Birthday; Date)
         {
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            var
+                myInt: Integer;
+            begin
+                Age := Today() - Birthday;
+            end;
         }
     }
 

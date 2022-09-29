@@ -40,12 +40,18 @@ page 50301 Pet
                     ApplicationArea = All;
                 }
 
+                field(OwnerNo; Rec.OwnerNo)
+                {
+                    Caption = 'Pet Owner No.';
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Owner field.';
+                }
                 field(Owner; Rec.Owner)
                 {
                     Caption = 'Pet Owner';
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the Owner field.';
                 }
+
             }
             group("Pet Attributes & More")
             {
@@ -62,11 +68,13 @@ page 50301 Pet
                 field(Height; Rec.Height)
                 {
                     ApplicationArea = All;
+                    Caption = 'Height(Inch)';
                     ToolTip = 'Specifies the measured pet height';
                 }
                 field(Weight; Rec.Weight)
                 {
                     ApplicationArea = All;
+                    Caption = 'Weight(Kg)';
                     ToolTip = 'Specifies the measured pet weight';
                 }
 

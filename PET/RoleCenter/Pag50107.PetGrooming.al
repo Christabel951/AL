@@ -72,6 +72,19 @@ page 50107 "Pet Grooming"
                 }
 
             }
+            group(Color)
+            {
+                Caption = 'Pet Colors';
+                action("Pet Color")
+                {
+                    ApplicationArea = Basic;
+                    Caption = 'Colors';
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    RunObject = Page "Color List";
+                }
+
+            }
             group(GroomingTypes)
             {
                 Caption = 'Grooming Types';

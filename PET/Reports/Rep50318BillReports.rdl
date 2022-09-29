@@ -19,21 +19,24 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.41927in</Width>
+                  <Width>1.50364in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.41927in</Width>
+                  <Width>1.50364in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.41927in</Width>
+                  <Width>1.50364in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.41927in</Width>
+                  <Width>1.08437in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.50364in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.30208in</Height>
+                  <Height>0.31076in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -133,6 +136,38 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Unit Cost</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox10">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -167,7 +202,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.30208in</Height>
+                  <Height>0.31076in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -261,6 +296,36 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="ApproxUnitCost_Visitlines">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ApproxUnitCost_Visitlines.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ApproxUnitCost_Visitlines</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Amount_Visitlines">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -294,7 +359,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.30208in</Height>
+                  <Height>0.31076in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -394,6 +459,38 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox19">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Amount_Visitlines1">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -434,6 +531,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -450,10 +548,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.48313in</Top>
-            <Left>0.08729in</Left>
-            <Height>0.90625in</Height>
-            <Width>5.67708in</Width>
+            <Top>0.33209in</Top>
+            <Left>0.10031in</Left>
+            <Height>0.93228in</Height>
+            <Width>7.09895in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -464,7 +562,7 @@
         <Height>2in</Height>
         <Style />
       </Body>
-      <Width>5.85417in</Width>
+      <Width>7.30604in</Width>
       <Page>
         <PageHeader>
           <Height>1.94791in</Height>
@@ -512,7 +610,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Visit No. : </Value>
-                      <Style />
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
@@ -576,7 +676,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Pet No.: </Value>
-                      <Style />
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
@@ -609,7 +711,7 @@
                       <Style />
                     </TextRun>
                     <TextRun>
-                      <Value>=First(Fields!ID_VisitLog.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!Pet_VisitLog.Value, "DataSet_Result")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -641,7 +743,9 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Pet Name. : </Value>
-                      <Style />
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
@@ -674,7 +778,7 @@
                       <Style />
                     </TextRun>
                     <TextRun>
-                      <Value>=First(Fields!ID_VisitLog.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!Name_VisitLog.Value, "DataSet_Result")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -706,17 +810,19 @@
                   <TextRuns>
                     <TextRun>
                       <Value>Grooming Type : </Value>
-                      <Style />
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.10156in</Top>
-              <Left>3.51562in</Left>
+              <Top>0.98313in</Top>
+              <Left>3.24479in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.27083in</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <Border>
@@ -739,7 +845,7 @@
                       <Style />
                     </TextRun>
                     <TextRun>
-                      <Value>=First(Fields!ID_VisitLog.Value, "DataSet_Result")First(Fields!GroomingType_VisitLog.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!GroomingType_VisitLog.Value, "DataSet_Result")</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -747,7 +853,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.10156in</Top>
+              <Top>0.98313in</Top>
               <Left>4.51562in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
@@ -835,6 +941,9 @@ End Function
         </Field>
         <Field Name="Owner_VisitLog">
           <DataField>Owner_VisitLog</DataField>
+        </Field>
+        <Field Name="PetOwnerName_VisitLog">
+          <DataField>PetOwnerName_VisitLog</DataField>
         </Field>
         <Field Name="No_Visitlines">
           <DataField>No_Visitlines</DataField>
