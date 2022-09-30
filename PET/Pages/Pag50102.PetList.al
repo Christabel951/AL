@@ -74,4 +74,29 @@ page 50302 PetList
             }
         }
     }
+    // actions
+    // {
+    //     area(Processing)
+    //     {
+    //         action("Pet List Report")
+    //         {
+    //             ApplicationArea = All;
+    //             Image = Print;
+    //             Promoted = true;
+    //             PromotedCategory = Report;
+    //             PromotedIsBig = true;
+    //             Caption = 'Pet List Report ';
+    //             trigger OnAction()
+    //             var
+    //                 PetRec: Record Pet;
+    //             begin
+    //                 PetRec.Reset();
+
+    //                 PetRec.SetRange(PetNo, Rec.PetNo);
+    //                 Report.Run(Report::"Pet List Report", true, true, PetRec);
+
+    //             end;
+    //         }
+    //     }
+    // }
 }

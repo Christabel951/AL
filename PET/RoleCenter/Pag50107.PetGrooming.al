@@ -16,22 +16,22 @@ page 50107 "Pet Grooming"
                 ApplicationArea = Suite;
                 Caption = 'User Tasks Activities';
             }
-            part("Emails"; "Email Activities")
-            {
-                ApplicationArea = Basic, Suite;
-                Caption = 'Email Activities';
-            }
-            part(ApprovalsActivities; "Approvals Activities")
-            {
-                ApplicationArea = Suite;
-                Caption = 'Approvals Activities';
-            }
-            part("Power BI Report Spinner Part"; "Power BI Report Spinner Part")
-            {
-                AccessByPermission = TableData "Power BI User Configuration" = I;
-                ApplicationArea = Basic, Suite;
-                Caption = 'Power BI Report Spinner Part';
-            }
+            // part("Emails"; "Email Activities")
+            // {
+            //     ApplicationArea = Basic, Suite;
+            //     Caption = 'Email Activities';
+            // }
+            // part(ApprovalsActivities; "Approvals Activities")
+            // {
+            //     ApplicationArea = Suite;
+            //     Caption = 'Approvals Activities';
+            // }
+            // part("Power BI Report Spinner Part"; "Power BI Report Spinner Part")
+            // {
+            //     AccessByPermission = TableData "Power BI User Configuration" = I;
+            //     ApplicationArea = Basic, Suite;
+            //     Caption = 'Power BI Report Spinner Part';
+            // }
         }
     }
     actions
@@ -96,6 +96,19 @@ page 50107 "Pet Grooming"
                     PromotedCategory = Process;
                     RunObject = Page "Grooming Types";
                 }
+            }
+            group(Reports)
+            {
+                Caption = 'Reports';
+                action("Pets Report")
+                {
+                    ApplicationArea = Basic;
+                    Caption = 'Pet List Report';
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    RunObject = Report "Pet List Report";
+                }
+
             }
             group(VisitLog)
             {

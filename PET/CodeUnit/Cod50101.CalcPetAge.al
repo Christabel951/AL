@@ -1,17 +1,23 @@
 codeunit 50101 CalcPetAge
 {
-    procedure GetPetAge(BirthDate: Date)
+    procedure GetPetAge(noPeriod: Integer): Text[50]
     var
-        noDays: Integer;
-        periodElaspsed: Text[20];
+        textPeriod: Text[20];
     begin
-        // noDays := BirthDate - System.Today;
-        // if noDays < 7 then begin
-        //     periodElaspsed := 'Days';
-        // end;
-        // if noDays > 7  noDays < 30 then begin
+        if noPeriod < 90 then begin
+            Error('Invalid/ Ineligible Age for Grooming');
+        end;
+        if (noPeriod > 90) AND (noPeriod < 365) then begin
+            noPeriod := noPeriod / 12;
+            textPeriod := Format(noPeriod);
+            exit(textPeriod + 'M');
+        end
+        else begin
+            noPeriod := noPeriod / 365;
+            textPeriod := Format(noPeriod);
+            exit(textPeriod + 'Y');
+        end;
 
-        // end;
     end;
 
 }

@@ -128,6 +128,7 @@ page 50305 "Visit Log"
 
                     end;
                 }
+
             }
 
         }

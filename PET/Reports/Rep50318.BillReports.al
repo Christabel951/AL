@@ -49,6 +49,16 @@ report 50318 "Bill Reports"
                 {
                 }
             }
+            dataitem("Company Information"; "Company Information")
+            {
+
+                column(Name_CompanyInformation; Name)
+                {
+                }
+                column(Picture_CompanyInformation; Picture)
+                {
+                }
+            }
         }
     }
     requestpage

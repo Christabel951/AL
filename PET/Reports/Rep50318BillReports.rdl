@@ -49,6 +49,7 @@
                                 <TextRun>
                                   <Value>Item No.</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -81,6 +82,7 @@
                                 <TextRun>
                                   <Value>Description</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -113,6 +115,7 @@
                                 <TextRun>
                                   <Value>Quantity</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -145,6 +148,7 @@
                                 <TextRun>
                                   <Value>Unit Cost</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -177,6 +181,7 @@
                                 <TextRun>
                                   <Value>Amount</Value>
                                   <Style>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>n2</Format>
                                   </Style>
@@ -549,9 +554,9 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0.33209in</Top>
-            <Left>0.10031in</Left>
+            <Left>0.22531in</Left>
             <Height>0.93228in</Height>
-            <Width>7.09895in</Width>
+            <Width>7.09893in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -562,7 +567,7 @@
         <Height>2in</Height>
         <Style />
       </Body>
-      <Width>7.30604in</Width>
+      <Width>7.43104in</Width>
       <Page>
         <PageHeader>
           <Height>1.94791in</Height>
@@ -588,8 +593,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.49875in</Top>
-              <Left>2.08729in</Left>
+              <Top>1.55555in</Top>
+              <Left>3.73623in</Left>
               <Height>0.32292in</Height>
               <Width>2.27083in</Width>
               <Style>
@@ -619,8 +624,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>0.98313in</Top>
-              <Left>0.32687in</Left>
+              <Top>1.15624in</Top>
+              <Left>0.45187in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
               <ZIndex>1</ZIndex>
@@ -653,10 +658,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>0.98313in</Top>
-              <Left>1.32687in</Left>
+              <Top>1.15624in</Top>
+              <Left>1.45187in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.04167in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -675,7 +680,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Pet No.: </Value>
+                      <Value>Pet No. : </Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -685,8 +690,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.24701in</Top>
-              <Left>0.32687in</Left>
+              <Top>1.40624in</Top>
+              <Left>0.45187in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
               <ZIndex>3</ZIndex>
@@ -719,10 +724,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.24701in</Top>
-              <Left>1.32687in</Left>
+              <Top>1.40624in</Top>
+              <Left>1.45187in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.04167in</Width>
               <ZIndex>4</ZIndex>
               <ToolTip>=First(Fields!Pet_VisitLog.Value, "DataSet_Result")</ToolTip>
               <Style>
@@ -752,8 +757,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.45139in</Top>
-              <Left>0.32687in</Left>
+              <Top>1.65624in</Top>
+              <Left>0.45187in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
               <ZIndex>5</ZIndex>
@@ -786,10 +791,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.45139in</Top>
-              <Left>1.32687in</Left>
+              <Top>1.65624in</Top>
+              <Left>1.45187in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.04167in</Width>
               <ZIndex>6</ZIndex>
               <ToolTip>=First(Fields!Name_VisitLog.Value, "DataSet_Result")</ToolTip>
               <Style>
@@ -819,8 +824,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>0.98313in</Top>
-              <Left>3.24479in</Left>
+              <Top>1.15624in</Top>
+              <Left>5.01438in</Left>
               <Height>0.25in</Height>
               <Width>1.27083in</Width>
               <ZIndex>7</ZIndex>
@@ -853,11 +858,44 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>0.98313in</Top>
-              <Left>4.51562in</Left>
+              <Top>1.15624in</Top>
+              <Left>6.28521in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.14583in</Width>
               <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox20">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Cronus Grooming Salon</Value>
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox20</rd:DefaultName>
+              <Top>0.41021in</Top>
+              <Left>0.60292in</Left>
+              <Height>0.52778in</Height>
+              <Width>1.89062in</Width>
+              <ZIndex>9</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -968,6 +1006,12 @@ End Function
         </Field>
         <Field Name="Amount_VisitlinesFormat">
           <DataField>Amount_VisitlinesFormat</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
         </Field>
       </Fields>
       <Query>

@@ -28,7 +28,7 @@ table 50100 Pet
             DataClassification = ToBeClassified;
             TableRelation = Color;
         }
-        field(6; Age; Integer)
+        field(6; Age; Decimal)
         {
             DataClassification = ToBeClassified;
             Editable = false;
@@ -72,9 +72,16 @@ table 50100 Pet
             DataClassification = ToBeClassified;
             trigger OnValidate()
             var
-                myInt: Integer;
+                calcPeriod: Codeunit CalcPetAge;
+                noPeriod: Integer;
             begin
-                Age := Today() - Birthday;
+                IF
+                Birthday <> 0D then begin
+
+                    Age := TODAY - Birthday; //Returns number of days
+                    Age := (Age / 365.2364);
+                    // Age := CalcDate()
+                end;
             end;
         }
     }

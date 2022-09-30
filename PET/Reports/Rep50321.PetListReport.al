@@ -30,6 +30,9 @@ report 50321 "Pet List Report"
             column(OwnerNo; OwnerNo)
             {
             }
+            column(Owner_Pet; Owner)
+            {
+            }
             column(PetName; PetName)
             {
             }
@@ -44,6 +47,31 @@ report 50321 "Pet List Report"
             }
             column(Weight; Weight)
             {
+            }
+            dataitem("Company Information"; "Company Information")
+            {
+
+                column(PhoneNo2_CompanyInformation; "Phone No. 2")
+                {
+                }
+                column(Picture_CompanyInformation; Picture)
+                {
+                }
+                column(Address_CompanyInformation; Address)
+                {
+                }
+                column(Name_CompanyInformation; Name)
+                {
+                }
+                column(City_CompanyInformation; City)
+                {
+                }
+                column(CountryRegionCode_CompanyInformation; "Country/Region Code")
+                {
+                }
+                column(County_CompanyInformation; County)
+                {
+                }
             }
         }
     }
