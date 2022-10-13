@@ -27,8 +27,22 @@ table 50100 Pet
         {
             DataClassification = ToBeClassified;
             TableRelation = Color;
+            trigger OnValidate()
+            var
+                myColor: Record Color;
+
+            begin
+                If myColor.Get(Color) then begin
+                    ColorName := myColor.ColorName;
+                end;
+            end;
+
         }
-        field(6; Age; Decimal)
+        field(13; ColorName; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(6; Age; Text[50])
         {
             DataClassification = ToBeClassified;
             Editable = false;
@@ -72,16 +86,10 @@ table 50100 Pet
             DataClassification = ToBeClassified;
             trigger OnValidate()
             var
-                calcPeriod: Codeunit CalcPetAge;
-                noPeriod: Integer;
+                Agecod: Codeunit CalcPetAge;
             begin
-                IF
-                Birthday <> 0D then begin
-
-                    Age := TODAY - Birthday; //Returns number of days
-                    Age := (Age / 365.2364);
-                    // Age := CalcDate()
-                end;
+                Age := Agecod.DetermineAge(Birthday, Today);
+                // Message(Age);
             end;
         }
     }

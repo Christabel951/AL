@@ -60,7 +60,6 @@
                           <rd:DefaultName>Textbox4</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -93,7 +92,6 @@
                           <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -126,7 +124,6 @@
                           <rd:DefaultName>Textbox8</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -159,7 +156,6 @@
                           <rd:DefaultName>Textbox17</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -193,7 +189,6 @@
                           <rd:DefaultName>Textbox10</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -228,7 +223,6 @@
                           <rd:DefaultName>No_Visitlines</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -258,7 +252,6 @@
                           <rd:DefaultName>Description_Visitlines</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -288,7 +281,6 @@
                           <rd:DefaultName>Quantity_Visitlines</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -318,7 +310,6 @@
                           <rd:DefaultName>ApproxUnitCost_Visitlines</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -350,7 +341,6 @@
                           <rd:DefaultName>Amount_Visitlines</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -387,7 +377,6 @@
                           <rd:DefaultName>Textbox12</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -419,7 +408,6 @@
                           <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -451,7 +439,6 @@
                           <rd:DefaultName>Textbox14</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -483,7 +470,6 @@
                           <rd:DefaultName>Textbox19</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -515,7 +501,6 @@
                           <rd:DefaultName>Amount_Visitlines1</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -553,8 +538,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.33209in</Top>
-            <Left>0.22531in</Left>
+            <Top>0.08209in</Top>
+            <Left>0.25in</Left>
             <Height>0.93228in</Height>
             <Width>7.09893in</Width>
             <Style>
@@ -564,13 +549,17 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2in</Height>
-        <Style />
+        <Height>5.08cm</Height>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
       </Body>
-      <Width>7.43104in</Width>
+      <Width>18.66628cm</Width>
       <Page>
         <PageHeader>
-          <Height>1.94791in</Height>
+          <Height>4.94769cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -581,7 +570,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Bill Report</Value>
+                      <Value>Billing  Report</Value>
                       <Style>
                         <FontSize>14pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -589,12 +578,14 @@
                       </Style>
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>1.55555in</Top>
-              <Left>3.73623in</Left>
+              <Top>0.55555in</Top>
+              <Left>2.23623in</Left>
               <Height>0.32292in</Height>
               <Width>2.27083in</Width>
               <Style>
@@ -625,9 +616,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.15624in</Top>
-              <Left>0.45187in</Left>
+              <Left>0.07687in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.65208in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -659,9 +650,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.15624in</Top>
-              <Left>1.45187in</Left>
+              <Left>1.07687in</Left>
               <Height>0.25in</Height>
-              <Width>1.04167in</Width>
+              <Width>1.69375in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <Border>
@@ -691,9 +682,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.40624in</Top>
-              <Left>0.45187in</Left>
+              <Left>0.07687in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.65208in</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <Border>
@@ -725,9 +716,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.40624in</Top>
-              <Left>1.45187in</Left>
+              <Left>1.07687in</Left>
               <Height>0.25in</Height>
-              <Width>1.04167in</Width>
+              <Width>1.69375in</Width>
               <ZIndex>4</ZIndex>
               <ToolTip>=First(Fields!Pet_VisitLog.Value, "DataSet_Result")</ToolTip>
               <Style>
@@ -758,9 +749,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.65624in</Top>
-              <Left>0.45187in</Left>
+              <Left>0.07687in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>1.65208in</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -792,9 +783,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.65624in</Top>
-              <Left>1.45187in</Left>
+              <Left>1.07687in</Left>
               <Height>0.25in</Height>
-              <Width>1.04167in</Width>
+              <Width>1.69375in</Width>
               <ZIndex>6</ZIndex>
               <ToolTip>=First(Fields!Name_VisitLog.Value, "DataSet_Result")</ToolTip>
               <Style>
@@ -825,7 +816,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.15624in</Top>
-              <Left>5.01438in</Left>
+              <Left>3.01438in</Left>
               <Height>0.25in</Height>
               <Width>1.27083in</Width>
               <ZIndex>7</ZIndex>
@@ -859,10 +850,42 @@
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>1.15624in</Top>
-              <Left>6.28521in</Left>
+              <Left>4.28521in</Left>
               <Height>0.25in</Height>
               <Width>1.14583in</Width>
               <ZIndex>8</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox18">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Pet Owner:</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>1.43402in</Top>
+              <Left>3.01438in</Left>
+              <Height>0.25in</Height>
+              <Width>1.27083in</Width>
+              <ZIndex>9</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -880,22 +903,23 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Cronus Grooming Salon</Value>
-                      <Style>
-                        <FontSize>14pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
+                      <Value xml:space="preserve"> </Value>
+                      <Style />
+                    </TextRun>
+                    <TextRun>
+                      <Value>=First(Fields!PetOwnerName_VisitLog.Value, "DataSet_Result")</Value>
+                      <Style />
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox20</rd:DefaultName>
-              <Top>0.41021in</Top>
-              <Left>0.60292in</Left>
-              <Height>0.52778in</Height>
-              <Width>1.89062in</Width>
-              <ZIndex>9</ZIndex>
+              <rd:DefaultName>Textbox2</rd:DefaultName>
+              <Top>1.43402in</Top>
+              <Left>4.28521in</Left>
+              <Height>0.25in</Height>
+              <Width>2.29166in</Width>
+              <ZIndex>10</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -909,13 +933,17 @@
           </ReportItems>
           <Style>
             <Border>
-              <Style>None</Style>
-            </Border>
-            <BottomBorder>
               <Style>Solid</Style>
-            </BottomBorder>
+            </Border>
           </Style>
         </PageHeader>
+        <PageHeight>27.94cm</PageHeight>
+        <PageWidth>21.59cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>0.5cm</TopMargin>
+        <BottomMargin>0.5cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -957,7 +985,7 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">

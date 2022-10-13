@@ -53,7 +53,7 @@ codeunit 50314 VisitManagement
                         if Item.Get(VisitLine."No.") then begin
                             SalesLine."No." := VisitLine."No.";
                             SalesLine.Description := Item.Description;
-                            SalesLine."Unit of Measure" := VisitLine."Unit of Measure";
+                            SalesLine."Unit of Measure Code" := VisitLine."Unit of Measure";
                         end;
                         SalesLine.Type := SalesLine.Type::Item;
                         SalesLine."Sell-to Customer No." := VisitLog."Pet Owner No.";

@@ -60,8 +60,14 @@ page 50301 Pet
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Age field.';
                 }
-                field(Color; Rec.Color)
+                field(Colorcode; Rec.Color)
                 {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the Color field.';
+                }
+                field(Color; Rec.ColorName)
+                {
+                    Editable = false;
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Color field.';
                 }

@@ -18,6 +18,9 @@ report 50321 "Pet List Report"
             column(Color; Color)
             {
             }
+            column(ColorName_Pet; ColorName)
+            {
+            }
             column(Description; Description)
             {
             }
