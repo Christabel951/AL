@@ -9,12 +9,17 @@ page 50107 "Pet Grooming"
             part(Control102; "Headline RC Project Manager")
             {
                 ApplicationArea = All;
-                Caption = 'Headline RC Project Manager';
+                Caption = 'HR';
             }
-            part("User Tasks Activities"; "User Tasks Activities")
+            // part("User Tasks Activities"; "User Tasks Activities")
+            // {
+            //     ApplicationArea = Suite;
+            //     Caption = 'User Task Activities';
+            // }
+            part("My Activities"; Activities)
             {
-                ApplicationArea = Suite;
-                Caption = 'User Tasks Activities';
+                ApplicationArea = All;
+                Caption = 'My Activities';
             }
             // part("Emails"; "Email Activities")
             // {
@@ -97,19 +102,6 @@ page 50107 "Pet Grooming"
                     RunObject = Page "Grooming Types";
                 }
             }
-            group(Reports)
-            {
-                Caption = 'Reports';
-                action("Pets Report")
-                {
-                    ApplicationArea = Basic;
-                    Caption = 'Pet List Report';
-                    Promoted = true;
-                    PromotedCategory = Process;
-                    RunObject = Report "Pet List Report";
-                }
-
-            }
             group(VisitLog)
             {
                 Caption = 'Visit Logs';
@@ -142,6 +134,44 @@ page 50107 "Pet Grooming"
                     PromotedCategory = Process;
                     RunObject = Page "Setup ";
                 }
+            }
+            group(Reports)
+            {
+                Caption = 'Reports';
+                action("Pets Report")
+                {
+                    ApplicationArea = Basic;
+                    Caption = 'Pet List Report';
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    RunObject = Report "Pet List Report";
+                }
+            }
+        }
+        area(Embedding)
+        {
+            action(Mycustomers)
+            {
+                Caption = 'Pet Owner & Customers';
+                RunObject = Page "Customer List";
+                ApplicationArea = All;
+            }
+            action(Items)
+            {
+                Caption = 'Items';
+                RunObject = Page "Item List";
+                ApplicationArea = All;
+            }
+            action("Bank Accounts")
+            {
+                Caption = 'Bank Accounts';
+                RunObject = Page "Bank Account List";
+                ApplicationArea = All;
+            }
+            action("Chart of Accounts")
+            {
+                Caption = 'Chart of Accounts';
+                RunObject = Page "Chart of Accounts";
             }
         }
     }

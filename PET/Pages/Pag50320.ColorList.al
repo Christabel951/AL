@@ -20,7 +20,7 @@ page 50320 "Color List"
                 }
                 field(ColorName; Rec.ColorName)
                 {
-                    Caption = 'Name';
+                    Caption = 'RGB Code';
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the ColorName field.';
                 }

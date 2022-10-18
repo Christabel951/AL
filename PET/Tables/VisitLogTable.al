@@ -14,6 +14,7 @@ table 50103 "Visit Log"
         {
             DataClassification = ToBeClassified;
             TableRelation = Pet;
+
             trigger OnValidate()
             var
                 PetRec: Record Pet;

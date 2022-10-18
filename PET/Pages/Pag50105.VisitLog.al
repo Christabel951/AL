@@ -20,6 +20,7 @@ page 50305 "Visit Log"
                 {
                     Caption = 'Pet Code';
                     ApplicationArea = All;
+                    ShowMandatory = true;
                     ToolTip = 'Specifies the value of the Pet field.';
                 }
                 field(PetType; Rec.PetType)
@@ -40,12 +41,14 @@ page 50305 "Visit Log"
                 field(GroomingType; Rec.GroomingType)
                 {
                     ApplicationArea = All;
+                    ShowMandatory = true;
                     ToolTip = 'Specifies the value of the GroomingType field.';
                 }
                 field(GroomTypeDesc; Rec.GroomTypeDesc)
                 {
                     ApplicationArea = All;
                     Caption = 'Grooming Description';
+                    ShowMandatory = true;
                     ToolTip = 'Specifies the value of the GroomTypeDesc field.';
                 }
                 field(Owner; Rec."Pet Owner No.")
@@ -68,7 +71,9 @@ page 50305 "Visit Log"
                 field(VisitDate; Rec.VisitDate)
                 {
                     ApplicationArea = All;
+                    ShowMandatory = true;
                     ToolTip = 'Specifies the value of the VisitDate field.';
+
                 }
             }
             part("Visit Log Lines"; "Visit Log Lines")
@@ -97,13 +102,24 @@ page 50305 "Visit Log"
                 var
                     SalesOrders: Text;
                     Text001: label 'Are you sure you want to Bill for %1?';
-                    Text002: label 'Sales Order(s) %1 successfully Created.';
+                    Text002: label 'Successfully Created Sales Order No';
                     SalesOrderCard: Page "Sales Order";
+                    SalesHeader: Record "Sales Header";
                     VisitManagement: Codeunit VisitManagement;
                 begin
+                    Rec.TestField("Pet Code");
+                    Rec.TestField(GroomingType);
+                    Rec.TestField(GroomTypeDesc);
+                    Rec.TestField(VisitDate);
+
                     if Confirm(Text001, false, Rec."Visit Log ID") then begin
                         SalesOrders := VisitManagement.CreatePurchaseOrderFromVisit(Rec."Visit Log ID");
-                        Message(Text002, SalesOrders);
+                        SalesHeader.reset();
+                        SalesHeader.SetRange(VisitID, Rec."Visit Log ID");
+                        if SalesHeader.FindFirst() then begin
+                            Message(Text002, SalesOrders);
+                            Message(SalesHeader."No.");
+                        end;
                     end;
                 end;
             }
