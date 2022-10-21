@@ -52,6 +52,27 @@ page 50322 Activities
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action("Set Up Cues")
+            {
+                ApplicationArea = All;
+                trigger OnAction()
+                var
+                    CueRecordRef: RecordRef;
+                begin
+                    CueRecordRef.GetTable(Rec);
+                    CuesAndKPIs.OpenCustomizePageForCurrentUser(CueRecordRef.Number);
+
+                end;
+            }
+        }
+    }
+    var
+        CuesAndKPIs: Codeunit "Cues And KPIs";
+
     trigger OnOpenPage()
     begin
         //Implementing the Singeton Design Pattern

@@ -6,7 +6,8 @@ page 50107 "Pet Grooming"
     {
         area(rolecenter)
         {
-            part(Control102; "Headline RC Project Manager")
+            // part(Control102; "Headline RC Project Manager")
+            part(HControl; "My Headline")
             {
                 ApplicationArea = All;
                 Caption = 'HR';
@@ -20,6 +21,12 @@ page 50107 "Pet Grooming"
             {
                 ApplicationArea = All;
                 Caption = 'My Activities';
+            }
+            part(MyFavList; "Frequent Customers")
+            {
+                ApplicationArea = All;
+                Caption = 'My Customers';
+
             }
             // part("Emails"; "Email Activities")
             // {
