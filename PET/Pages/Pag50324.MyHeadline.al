@@ -19,8 +19,6 @@ page 50324 "My Headline"
                 {
                     ApplicationArea = All;
                     trigger OnDrillDown()
-                    var
-                        myInt: Integer;
                     begin
                         Hyperlink('https://go.microsoft.com/fwlink/?linkid=867580');
                     end;
@@ -35,7 +33,7 @@ page 50324 "My Headline"
     end;
 
     var
-        WelcomeLabel1: Label 'Weclome %1';
+        WelcomeLabel1: Label 'Good Morning %1';
         BusinessCentralIsAwesome: Label '<qualifier>Pet Grooming Basic</qualifier><payload>Pet Grooming Salon<emphasize> all Services available</emphasize> Come all!</payload>';
         Welcome: Text;
 
